@@ -44,7 +44,7 @@ class Comments extends Component {
 
   onAddComment = event => {
     console.log('add comment triggered')
-    event.defaultPrevent()
+    event.preventDefault()
     const {nameInput, commentInput} = this.state
     const initialBackgroundColorClassName = `initial-container ${
       initialContainerBackgroundClassNames[
